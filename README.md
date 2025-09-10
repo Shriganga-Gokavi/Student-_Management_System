@@ -24,3 +24,16 @@ This project allows adding, updating, deleting, sorting, and filtering student d
 - A terminal/command prompt
 
 ---
+## How to Run
+
+ Clone this repository:
+   ```bash
+   git clone https://github.com/Shriganga-Gokavi/Student-_Management_System.git
+   cd Student-_Management_System/java
+
+## Compile the program:
+javac project.java
+
+## Run the program:
+java project
+
