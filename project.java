@@ -191,6 +191,7 @@ public static void main(String args[]){
         System.out.println("enter valid choice");
        }
        info=true;
+            
        break;//it is not used again n again it will ask abt updation it will not come out of update
     }
 }
@@ -198,7 +199,7 @@ public static void main(String args[]){
         System.out.println("No students are There with this Roll.NO");
     }
      savetoCSV(student);
-     System.out.println("UPDATED TO CSV FILE");
+    
     break;
        case 4:
        System.out.println("enter roll number u wanna delete:");
@@ -291,6 +292,7 @@ public static void main(String args[]){
     }
     }
 }
+
 
 
 
