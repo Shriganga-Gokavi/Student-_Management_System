@@ -47,7 +47,9 @@ public static void fromcsv(ArrayList<Student>st){
         }
         }
         r.close();
+        if(st.size()!=0){
         System.out.println("DATA LOADED");
+    }
     }
     catch(IOException e){
         System.out.println("No existing data found. Starting fresh");
@@ -289,6 +291,7 @@ public static void main(String args[]){
     }
     }
 }
+
 
 
 
