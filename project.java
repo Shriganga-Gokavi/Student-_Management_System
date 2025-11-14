@@ -50,7 +50,7 @@ public static void fromcsv(ArrayList<Student>st){
         System.out.println("DATA LOADED");
     }
     catch(IOException e){
-        System.out.println("ERROR");
+        System.out.println("No existing data found. Starting fresh");
     }
 }
 public static void main(String args[]){
@@ -66,7 +66,7 @@ public static void main(String args[]){
         System.out.println("5.EXIT");
         System.out.println("6.SORT BY ROLL.NO");
         System.out.println("7.SORT BY NAME");
-        System.out.println("8.TOPPER LIST");
+        System.out.println("8.SORT BY MARKS");
         System.out.println("9:DETAILS BASED ON COURSE");
         System.out.println("-----------");
         System.out.print("enter ur choice:");
@@ -208,6 +208,7 @@ public static void main(String args[]){
             info1=true;
             System.out.println("Student deleted");
             System.out.println("DELETED FROM CSV FILE");
+            break;
         }
     }
     if(!info1){
@@ -253,7 +254,7 @@ public static void main(String args[]){
        }
        else{
         student.sort((a,b)->Float.compare(b.marks,a.marks));//collection sort builtin function for integer(lambda function) descending order
-        System.out.println("TOPPERS");
+        System.out.println("STUDENTS");
         System.out.println("--------");
         for(Student st1:student){
             st1.display();
@@ -288,5 +289,6 @@ public static void main(String args[]){
     }
     }
 }
+
 
 
