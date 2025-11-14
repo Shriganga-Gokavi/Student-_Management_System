@@ -132,7 +132,7 @@ public static void main(String args[]){
         if(s2.roll==uproll){
        System.out.println("1.roll number");
        System.out.println("2.name");
-       System.out.println("3.couse");
+       System.out.println("3.course");
        System.out.println("4.marks");
        int m=sc.nextInt();
        switch(m){
@@ -207,13 +207,14 @@ public static void main(String args[]){
             student.remove(i);
             info1=true;
             System.out.println("Student deleted");
+            System.out.println("DELETED FROM CSV FILE");
         }
     }
     if(!info1){
         System.out.println("No students are There with this Roll.NO");
     }
      savetoCSV(student);
-     System.out.println("DELETED FROM CSV FILE");
+     
        break;
        case 5:
        savetoCSV(student);//even after exiting info will be stored in file
@@ -287,4 +288,5 @@ public static void main(String args[]){
     }
     }
 }
+
 
